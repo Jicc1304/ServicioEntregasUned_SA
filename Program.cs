@@ -1,8 +1,16 @@
 ﻿using System;
+using System.Windows.Forms;
 
-public class Class1
+namespace Presentacion
 {
-	public Class1()
-	{
-	}
+   static class Program
+   {
+      [STAThread]
+      static void Main()
+      {
+         Application.EnableVisualStyles();
+         Application.SetCompatibleTextRenderingDefault(false);
+         Application.Run(new FormPrincipal()); // Cambia a tu formulario inicial si es otro
+      }
+   }
 }
